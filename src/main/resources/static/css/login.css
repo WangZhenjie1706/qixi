@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/login/loginBac.jpg");;
+    background-image: url("../images/login.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -26,14 +26,9 @@ form p > * {
     vertical-align: middle;
 }
  
-#image_logo {
-    margin-top: 22px;
-}
- 
 .label_input {
     font-size: 14px;
     font-family: 宋体;
- 
     width: 65px;
     height: 28px;
     line-height: 28px;
@@ -66,7 +61,6 @@ form p > * {
     background-color: #3BD9FF;
     border-radius: 6px;
     border: 0;
- 
     float: left;
 }
  
