@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import cn.baba.dao.UserDao;
 
 /**
- *
+ * 用户控制
+ * 
  * @version 1.0 created by wangzhenjie_fh on 2018年10月2日 下午2:17:09
  */
 @RestController
