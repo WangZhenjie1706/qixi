@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <script src="../static/scripts/jquery.min.js"></script>
-    <title>Title</title>
+    <title>登录界面</title>
 </head>
-    <h1>TEST PAE</h1>
+	<link href="css/login.css" rel="stylesheet"/>
 <body>
 	<h2>自定义登录页面</h2>
 	<hr></hr>
-	<form action="/user/doLogin" method="POST" name="f">
-		用户名<input type="text" name="username"/> <br/>
-		密码 <input type="password" name="password"/> <br/>
-		<input type="submit" value="登录" />
+	<form method="post" action="/user/doLogin">         
+		<p>
+			<label class="label_input">用户名</label><input type="text" id="username" class="text_field"/>
+		</p>        
+		<p>
+			<label class="label_input">密码</label><input type="text" id="password" class="text_field"/>
+		</p>         
+		<div id="login_control">            
+			<input type="button" id="btn_login" value="登录" onclick="login();"/>            
+			<a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>        
+		</div>    
 	</form>
 </body>
 </html>
