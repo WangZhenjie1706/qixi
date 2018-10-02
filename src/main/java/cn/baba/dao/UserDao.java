@@ -15,5 +15,5 @@ import cn.baba.domain.User;
 public interface UserDao extends JpaRepository<User, Long> {
 
     @Query("select t from User t where t.username = :username")
-    User findByUsername(@Param("username") String Username);
+    User findByUsername(@Param("username") String username);
 }

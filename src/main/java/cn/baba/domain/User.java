@@ -6,6 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.Length;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 
 /**
@@ -21,5 +25,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long   id;
     private String username;
+    @JsonIgnore // 序列化时忽略该字段
+    @Length(min = 6, max = 20, message = "密码的长度在6~20之间.")
     private String password;
 }
